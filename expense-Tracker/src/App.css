@@ -1,0 +1,153 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.app {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #444;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wallet-balance, .expenses-summary {
+  background-color: #666;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wallet-balance {
+  color: #90ee90;
+}
+
+.expenses-summary {
+  color: #ffa07a;
+}
+
+.add-income, .add-expense {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-income {
+  background-color: #32cd32;
+  color: #fff;
+}
+
+.add-expense {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+.transactions, .top-expenses {
+  background-color: #555;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.transactions {
+  width: 60%;
+  margin-right: 2%;
+}
+
+.top-expenses {
+  width: 38%;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #666;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-item span {
+  flex: 1;
+  text-align: left;
+}
+
+.transaction-item button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.transaction-item button.edit {
+  background-color: #ffcc00;
+}
+
+.transaction-item button.delete:hover {
+  background-color: #c82333;
+}
+
+.transaction-item button.edit:hover {
+  background-color: #ffb700;
+}
+
+#transaction-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pie-chart, .bar-chart {
+  background-color: #666;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .forms {
+    flex-direction: column;
+  }
+
+  .wallet-balance, .expenses-summary {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .transactions, .top-expenses {
+    width: 100%;
+  }
+}
